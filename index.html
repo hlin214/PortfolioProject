@@ -7,16 +7,14 @@
         <title>Portfolio</title>
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/responsive.css">
+
     </head>
     <body>
-        <header>
-            <div class="page-header">
-                <div class="page-header-logo">
-                    <img src="image/udacity.png" alt="Udacity" style="max-height: 200px;max-width: 100%;padding: 3px;margin-top: 21px;" >
-                </div>
-                <div class="page-header-title">
-                    <h1>Han Lin</h1>
-                </div>
+        <header class="header">
+            <div class="page-header">           
+                <img class="page-header-logo" src="image/udacity.png" alt="Udacity" >
+                <h1 class="page-header-title">Han Lin</h1>
+                                 
                 <a class="page-header-menu">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
@@ -35,7 +33,7 @@
                     <a href="https://www.linkedin.com/in/han-lin-436a12116/" target="_blank" title="Linkedin">Linkedin</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects">Projects</a>
+                    <a href="index.html#projects">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a href="#experience">Experience</a>
@@ -43,7 +41,6 @@
                 <li class="nav-item">
                     <a href="#education">Education</a>
                 </li>
-                
             </ul>
             
         </nav>
@@ -60,45 +57,71 @@
                     </div>
                 </section>
                 <section id="experience">
-                    
+                     <h2 class="section-title">Experience</h2>
+                    <div id="arena" class="project-content">
+                        <img src="image/arena.png" alt="Arena Solutions">
+                        <h3>Arena Solutions</h3>
+                        <h4>"Quality Assurance Engineer"
+                            <small>Jan 17 - Current</small>
+                        </h4>
+                        <div class="description">
+                            <p>As Quality Assurance Engineer, I design and develop UI automation test based open library Serenity. </p>
+                        </div>
+                    </div>
+                    <div id="apple" class="project-content">
+                        <img src="image/apple.png" alt="Apple Inc">
+                        <h3>Apple Inc</h3>
+                        <h4>"Quality Assurance Engineer"
+                            <small>Aug 15 - Nov 16</small>
+                        </h4>
+                        <div class="description">
+                            <p>As a member of IS&T department, I work with developers to insure the quality of our internal software. I conducted both UI automation testing and REST API automation testing. </p>
+                        </div>
+                    </div>
                 </section>
                 <section id="education">
-                    
+                    <h2 class="section-title">Education</h2>
+                    <div id="stevens" class="project-content">
+                        <img src="image/stevens.png" alt="Stevens Institure of Technology">
+                        <h3>Stevens Institure of Technology</h3>
+                        <h4>"Engineering Management"
+                            <small>GPA: 3.7</small>
+                        </h4>
+                    </div>
+                    <div id="NJUST" class="project-content">
+                        <img src="image/NJUST.png" alt="Nanjing University of Science and Technology">
+                        <h3>Nanjing University of Science and Technology</h3>
+                        <h4>"Electronic Engineering"
+                            <small>GPA: 3.1</small>
+                        </h4>
+                    </div>
                 </section>
                     
             </div>
             
             
         </main>
+                <script>
+      /*
+       * Open the drawer when the menu ison is clicked.
+       */
+      var menu = document.querySelector('.page-header-menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav-bar');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+    </script>
 
         <footer>
             
         </footer>
-
-
-    	<!-- <div id="page-header">
-    		<div class="container">
-    			
-    			<div class="page-header-title">
-    				<div class="name">
-    					<h1>Han Lin</h1>
-    					
-    				</div>
-    				<nav class="nav-bar">
-    					<ul>
-    						<li><a href="https://www.linkedin.com/in/han-lin-436a12116/" target="_blank" title="Linkedin">Linkedin</a></li>
-    					</ul>
-    				</nav>
-
-    				
-    			</div>
-
-
-    			
-    		</div>
-    		
-    	</div> -->
-
 
     </body>
 </html>

@@ -1,4 +1,4 @@
-body, html {
+body, html{
   margin: 0;
   padding: 0;
   width: 100%;
@@ -6,8 +6,8 @@ body, html {
 }
 
 body {
-  font-family: Roboto;
-  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
   color: #424242;
 }
 
@@ -19,40 +19,97 @@ header, nav, footer, section, article, div {
   box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
-}
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
 /*Page Header*/
-.page-header {
+.header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  min-height: 56px;
+  min-height: 120px;
   transition: min-height 0.3s;
+}
+.page-header {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .page-header-logo {
-  margin-right: 1em;
   vertical-align: top;
-  margin-top: 12px;
-  max-height: 200px;
-  max-width: 100%;
-  padding: 3px;
-  margin-top: 21px;
+  height: 60px;
+  margin-right: 5em;
+  margin-top: 15px;
+    display: block;
+float: left;
 }
 
 .page-header-title{
-  font-weight: 300;
+  font-weight: bold;
   font-size: 3em;
-  margin: 0.75em 0.25em;
+  text-transform: uppercase;
+  margin: 1em 1em;
   display: inline-block;
-  color: #212121;
+  color: #2d3c49;
+
 }
+
+/*Navigation bar*/
+
+.nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.nav-item {
+  box-sizing: border-box;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    line-height: 24px;
+    padding: 24px;
+    text-transform: uppercase;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #616161;
+  padding: 1.5em;
+}
+
+main {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-content img {
+  width: 250px;
+  height: 200px;
+    float: left;
+    margin: 3px;
+    padding: 3px;
+  display: block;
+
+}
+
+section {
+  margin: 3px;
+    padding: 3px;
+}
+h3{
+  margin: 3px;
+    padding: 3px;
+}
+h4{
+    margin: 3px;
+    padding: 3px;
+}
+
+/**/
